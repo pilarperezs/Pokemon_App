@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="img/pokemon.png" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <h1>Pokédex</h1>
+        <form id="searchForm" class="search-form" aria-label="Buscar Pokémon">
+            <input id="searchInput" type="search" placeholder="Buscar por nombre o id" aria-label="Nombre de Pokémon" />
+            <button id="searchBtn" type="submit">Buscar</button>
+            <button id="themeBtn">🌙 Cambiar tema</button>
+        </form>
+    </header>
+    <main class="container">
+        <aside class="sidebar">
+            <section class="panel" aria-labelledby="recent-title">
+                <h2 id="recent-title">Últimas búsquedas</h2>
+                <ul id="recentList" class="list"></ul>
+            </section>
+            <section class="panel" aria-labelledby="fav-title">
+                <h2 id="fav-title">Favoritos</h2>
+                <ul id="favList" class="list"></ul>
+            </section>
+        </aside>
+        <section class="content">
+            <div id="detail" class="detail panel" aria-live="polite"></div>
+            <div class="list-controls">
+                <div id="topPagination" class="pagination"></div>
+                <div id="status" class="status"></div>
+            </div>
+            <section id="cardList" class="card-grid" aria-live="polite"></section>
+            <div class="list-controls">
+                <div id="bottomPagination" class="pagination"></div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Datos de <a href="https://pokeapi.co/" target="_blank" rel="noopener">PokéAPI</a></p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
