@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.5;
+}
+
+a {
+  color: #e3350d;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+}
+
+/* layout general */
+body {
+  background-color: #f5f5f5;
+  color: #222;
+}
+
+/* tema oscuro */
+body.dark {
+  background-color: #222;
+  color: #f5f5f5;
+}
+
+.list li {
+  padding: 0.25rem 0;
+  cursor: pointer; /* esto hace que el cursor cambie al pasar por encima */
+}
+
+.list li:hover {
+  text-decoration: underline; /*efecto visual al pasar el mouse */
+}
+
+/*panel y tarjetas */
+.panel {
+  background-color: #fff;
+  color: #222;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+body.dark .panel {
+  background-color: #333;
+  color: #f5f5f5;
+}
+
+.card {
+  background-color: #fff;
+  color: #222;
+  padding: 0.5rem;
+  border-radius: 6px;
+  text-align: center;
+}
+
+body.dark .card {
+  background-color: #444;
+  color: #f5f5f5;
+}
+
+header.header {
+  background: #ef5350;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* form */
+.search-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.search-form input {
+  padding: 0.5rem 0.75rem;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  min-width: 220px;
+}
+
+.search-form button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #fdd835;
+  color: #333;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.search-form button:hover {
+  background: #fbc02d;
+}
+
+/* container */
+main.container {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 1rem;
+  padding: 1rem 2rem;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.panel {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.panel h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+  color: #e3350d;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* seccion principal */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.detail {
+  min-height: 120px;
+}
+
+.detail img {
+  max-width: 200px;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* paginacion y estado */
+.list-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pagination {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.pagination button {
+  padding: 0.4rem 0.75rem;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.pagination button:hover {
+  background: #eee;
+}
+
+.status {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* grid pokemon */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
+}
+
+.card-grid .card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card-grid .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.card-grid img {
+  max-width: 100px;
+  margin-bottom: 0.5rem;
+}
+
+.card-grid h3 {
+  font-size: 1rem;
+  color: #333;
+}
+
+body.dark .card h3 {
+    color: #fff;
+}
+.card h3 .poke-name {
+  color: inherit; /* seguira el color normal de la card */
+}
+
+.card h3 .poke-id {
+  color: #888; /* gris claro para diferenciar */
+}
+
+/* Modo oscuro */
+body.dark .card h3 .poke-id {
+  color: #ccc; /* gris mas claro en oscuro */
+}
+
+
+/* footer */
+.footer {
+  background: #ef5350;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+.footer a {
+  color: #fdd835;
+  font-weight: bold;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  main.container {
+    grid-template-columns: 1fr;
+  }
+  
+  .search-form {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .search-form input {
+    flex: 1;
+  }
+}
+.status.error {
+  color: red;
+  font-weight: bold;
+}
