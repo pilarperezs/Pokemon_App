@@ -8,21 +8,14 @@ Cómo ejecutar el proyecto
 2. Abrir el archivo index.html en un navegador.
 3. Asegurarse de tener conexión a Internet (la app consume la API en línea de PokéAPI).
 
-Funcionalidades principales
--Buscador: buscar Pokémon por nombre o ID.
-
--Ficha de Pokémon: muestra nombre, número, tipos, altura, peso, habilidades e imagen oficial.
-
--Últimas búsquedas: guarda hasta 10, clicables para volver a abrir la ficha.
-
--Favoritos: se pueden guardar hasta 50 Pokémon, también clicables.
-
--Listado con paginación: muestra todos los Pokémon (24 por página) con controles de navegación.
-
--Tema claro/oscuro: botón para cambiar el tema visual de la aplicación.
-
--Manejo de errores: mensajes claros cuando la búsqueda falla o el input está vacío.
-
+Funcionalidades principales:   
+-Buscador: buscar Pokémon por nombre o ID.  
+-Ficha de Pokémon: muestra nombre, número, tipos, altura, peso, habilidades e imagen oficial.  
+-Últimas búsquedas: guarda hasta 10, clicables para volver a abrir la ficha.  
+-Favoritos: se pueden guardar hasta 50 Pokémon, también clicables.  
+-Listado con paginación: muestra todos los Pokémon (24 por página) con controles de navegación.  
+-Tema claro/oscuro: botón para cambiar el tema visual de la aplicación.  
+-Manejo de errores: mensajes claros cuando la búsqueda falla o el input está vacío.  
 -Responsive: diseño adaptado para móviles.
 
 Decisiones tomadas
