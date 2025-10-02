@@ -32,4 +32,4 @@ Decisiones tomadas
 3. PokéAPI: se eligió por ser una API pública, simple y muy usada en proyectos de prueba.
 4. Diseño responsive con CSS Grid/Flexbox: las tarjetas se adaptan al ancho de pantalla y el sidebar pasa abajo en móviles.
 5. Modo oscuro: implementado con un data-theme en el <body> y variables CSS, para mantener la hoja de estilos más limpia.
-6. Fallbacks de errores: si no se ingresa nada en el buscador o el Pokémon no existe, se muestra un mensaje en lugar de romper la app.
+6. Errores: si no se ingresa nada en el buscador o el Pokémon no existe, se muestra un mensaje en lugar de romper la app.
