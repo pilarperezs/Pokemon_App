@@ -53,7 +53,7 @@ themeBtn.onclick = () => {
 async function fetchPokemon(nameOrId) {
     setStatus("Buscando…");
     const res = await fetch(`${API_BASE}/pokemon/${nameOrId}`);
-    if (!res.ok) throw new Error("Pokémon no encontrado");
+    if (!res.ok) throw new Error("404 - Pokémon no encontrado");
     return await res.json();
 }
 async function fetchList(page) {
