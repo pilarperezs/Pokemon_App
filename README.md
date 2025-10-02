@@ -1,6 +1,8 @@
 # PokemonApp
 Pokédex Web
 
+Link al repositorio: https://github.com/pilarperezs/Pokemon_App
+
 Este proyecto es una Pokédex interactiva construida con HTML, CSS y JavaScript, consumiendo la PokéAPI
 
 Cómo ejecutar el proyecto
