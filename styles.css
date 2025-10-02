@@ -110,7 +110,6 @@ header h1 {
   font-weight: bold;
   border-radius: 6px;
   cursor: pointer;
-  transition: background 0.3s;
 }
 .search-form button:hover {
   background: #fbc02d;
@@ -191,6 +190,11 @@ main.container {
 }
 
 .status {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  text-align: center;
+  word-wrap: break-word;
   font-size: 0.9rem;
   color: #666;
 }
@@ -257,9 +261,42 @@ body.dark .card h3 .poke-id {
   color: #fdd835;
   font-weight: bold;
 }
+.status.error {
+  color: red;
+  font-weight: bold;
+}
 
 /* responsive */
 @media (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  .search-form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+
+  .search-form input {
+    flex: 1;
+  }
+
+  #themeBtn {
+    align-self: flex-end;
+  }
+
+  #status {
+    margin-top: 0.8rem;
+    font-size: 0.85rem;
+    text-align: center;
+  }
+
   main.container {
     grid-template-columns: 1fr;
   }
@@ -272,8 +309,4 @@ body.dark .card h3 .poke-id {
   .search-form input {
     flex: 1;
   }
-}
-.status.error {
-  color: red;
-  font-weight: bold;
 }
